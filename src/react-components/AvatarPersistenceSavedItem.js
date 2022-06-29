@@ -17,10 +17,10 @@ export function AvatarPersistenceSavedItem({ slotKey, setAvatarConfig }) {
         <li>
             <div>{slotKey}</div>
             <div className="savedItemActions">
-                <button className="savedItemAction" title="Delete Icon" onClick={deleteAvatar}>
+                <button className="savedItemAction" title="Delete avatar" onClick={deleteAvatar}>
                     <FontAwesomeIcon icon={ faTrashAlt } />
                 </button>
-                <button className="savedItemAction" title="Load Avatar" onClick={loadAvatar}>
+                <button className="savedItemAction" title="Load avatar" onClick={loadAvatar}>
                     <FontAwesomeIcon icon={ faArrowAltCircleRight } />
                 </button>
             </div>

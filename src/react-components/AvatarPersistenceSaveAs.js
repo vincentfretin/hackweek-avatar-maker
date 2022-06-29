@@ -39,7 +39,7 @@ export function AvatarPersistenceSaveAs({ avatarConfig }) {
                     <input type="text" value={name} autoFocus 
                         onChange={e => setName(e.target.value)} 
                         onKeyDown={cancelOnEscape}
-                        placeholder="Save Current Avatar as ..."/>
+                        placeholder="Give a name"/>
                 </div>
                 <div className="savedItemActions">
                     <button className="savedItemAction" title="Cancel" onClick={cancel}>
@@ -54,7 +54,7 @@ export function AvatarPersistenceSaveAs({ avatarConfig }) {
     } else {
         return (
             <li className="saveAs closed">
-                <button onClick={openSaveAs}>Save Current As...</button>
+                <button onClick={openSaveAs} className="btn-secondary">Save Current As...</button>
             </li>
         )
     }
