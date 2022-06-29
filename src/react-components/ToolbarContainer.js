@@ -17,7 +17,6 @@ export function ToolbarContainer({ onGLBUploaded, randomizeConfig }) {
   return (
     <Toolbar>
       <div className="toolbarContent">
-        <span className="appName">Hackweek Avatar Maker</span>
         <MoreMenu
           items={
             <>
@@ -35,7 +34,7 @@ export function ToolbarContainer({ onGLBUploaded, randomizeConfig }) {
         </button>
       </div>
       <div className="toolbarNotice">
-        <span>The 3D models used in this app are ©2020-2022 by individual <a href="https://www.mozilla.org" target="_blank" rel="noreferrer">mozilla.org</a> contributors.
+        <span>The 3D models used in this avatar maker are ©2020-2022 by individual <a href="https://www.mozilla.org" target="_blank" rel="noreferrer">mozilla.org</a> contributors.
           Content available under a <a href="https://www.mozilla.org/en-US/foundation/licensing/website-content/" target="_blank" rel="noreferrer">Creative Commons license</a>.</span>
       </div>
     </Toolbar>
