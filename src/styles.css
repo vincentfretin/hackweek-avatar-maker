@@ -66,6 +66,7 @@ body,
   width: 55%;
 }
 
+.partSelector button,
 .toolbar button,
 .toolbar label {
   margin: 3px;
