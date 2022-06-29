@@ -21,11 +21,11 @@ export function ToolbarContainer({ onGLBUploaded, randomizeConfig, setAvatarConf
         <MoreMenu
           items={
             <>
-              <UploadButton onGLBUploaded={onGLBUploaded} />
+              {/* <UploadButton onGLBUploaded={onGLBUploaded} /> */}
               <AvatarPersistenceContainer {...{ setAvatarConfig, avatarConfig }} />
-              <a href="https://github.com/mozilla/hackweek-avatar-maker" target="_blank">
+              {/* <a href="https://github.com/mozilla/hackweek-avatar-maker" target="_blank">
                 GitHub
-              </a>
+              </a> */}
             </>
           }
         ></MoreMenu>
