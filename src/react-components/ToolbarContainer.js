@@ -28,9 +28,9 @@ export function ToolbarContainer({ onGLBUploaded, randomizeConfig }) {
             </>
           }
         ></MoreMenu>
-        <button onClick={randomizeConfig}>Randomize avatar</button>
-        <button onClick={dispatchResetView}>Reset camera view</button>
-        <button onClick={dispatchExportAvatar} className="primary">
+        <button onClick={randomizeConfig} className="btn-secondary">Randomize avatar</button>
+        <button onClick={dispatchResetView} className="btn-secondary">Reset camera view</button>
+        <button onClick={dispatchExportAvatar} className="btn">
           Export avatar
         </button>
       </div>

@@ -224,6 +224,7 @@ body,
   border-top: 2px solid lightgrey;
 }
 
+/*
 .toolbarContent button, .toolbarContent .uploadButton {
   display: inline;
   background-color: white;
@@ -252,6 +253,7 @@ button.primary:focus {
   background-color: lightblue;
   border-color: lightblue;
 }
+*/
 
 .toolbarContent .uploadButton input {
   display: none;
@@ -269,7 +271,7 @@ button.primary:focus {
 }
 
 .menuContainer .menuButton {
-  --button-size: 70px;
+  --button-size: 40px;
   font-size: 20pt;
   width: var(--button-size);
   height: var(--button-size);
