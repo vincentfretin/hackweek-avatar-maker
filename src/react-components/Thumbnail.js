@@ -5,7 +5,7 @@ export const Thumbnail = React.forwardRef(({ as: Component = "div", image, class
   return (
     <Component
       className={cx("partThumbnail", className)}
-      style={{ backgroundImage: image ? `url("assets/thumbnails/${image}.jpg")` : "none" }}
+      style={{ backgroundImage: image ? `url("/assets/thumbnails/${image}.jpg")` : "none" }}
       {...props}
       ref={ref}
     >
