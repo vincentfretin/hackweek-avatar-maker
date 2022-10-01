@@ -20,6 +20,7 @@ import uvScroll from "./uv-scroll";
 import idleEyes from "./idle-eyes";
 import assets from "./assets";
 import debugConfig from "./debug-config";
+import { saveAvatarConfig } from "./persistence";
 
 // Used to test mesh combination
 window.combineCurrentAvatar = async function () {
@@ -62,6 +63,7 @@ window.addEventListener("resize", () => {
 document.addEventListener(constants.avatarConfigChanged, (e) => {
   state.newAvatarConfig = e.detail.avatarConfig;
   state.shouldApplyNewAvatarConfig = true;
+  saveAvatarConfig("autosaved", state.newAvatarConfig);
 });
 document.addEventListener(constants.renderThumbnail, (e) => {
   state.thumbnailConfig = e.detail.thumbnailConfig;

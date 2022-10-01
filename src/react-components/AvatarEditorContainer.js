@@ -11,7 +11,7 @@ import { generateRandomConfig } from "../generate-random-config";
 import initialAssets from "../assets";
 import { isThumbnailMode } from "../utils";
 import debounce from "../utils/debounce";
-import { avatarPersistenceUIEnabled } from "../persistence";
+import { avatarPersistenceUIEnabled, getAvatarConfig } from "../persistence";
 
 // Used externally by the generate-thumbnails script
 const thumbnailMode = isThumbnailMode();
@@ -22,7 +22,13 @@ export function AvatarEditorContainer() {
   const debouncedSetHoveredConfig = useCallback(debounce(setHoveredConfig), [setHoveredConfig]);
   const [canvasUrl, setCanvasUrl] = useState(null);
 
-  const initialConfig = generateRandomConfig(assets);
+  const autoSavedConfig = getAvatarConfig("autosaved");
+  let initialConfig;
+  if (autoSavedConfig){
+    initialConfig = autoSavedConfig;
+  } else {
+    initialConfig = generateRandomConfig(assets);
+  }
   const [avatarConfig, setAvatarConfig] = useState(initialConfig);
   const [tipState, setTipState] = useState({ visible: false, text: "", top: 0, left: 0 });
 
