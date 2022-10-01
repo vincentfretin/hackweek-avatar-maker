@@ -31,9 +31,9 @@ export function ToolbarContainer({ onGLBUploaded, randomizeConfig, setAvatarConf
         ></MoreMenu>
         <button onClick={randomizeConfig} className="btn-secondary">Randomize avatar</button>
         <button onClick={dispatchResetView} className="btn-secondary">Reset camera view</button>
-        <button onClick={dispatchExportAvatar} className="btn">
+        {/* <button onClick={dispatchExportAvatar} className="btn">
           Export avatar
-        </button>
+        </button> */}
       </div>
       <div className="toolbarNotice">
         <span>The 3D models used in <a href="https://github.com/mozilla/hackweek-avatar-maker" target="_blank" rel="noreferrer">this avatar maker</a> are ©2020-2022 by individual <a href="https://www.mozilla.org" target="_blank" rel="noreferrer">mozilla.org</a> contributors.
